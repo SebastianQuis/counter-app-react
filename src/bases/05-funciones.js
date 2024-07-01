@@ -16,7 +16,7 @@ export const getUser = ( ) => ({
 });
 
 
-export const userActive = (nombre) => ({
+export const getUser2 = (nombre) => ({
         uid: 'ABC123',
         username: nombre
 });

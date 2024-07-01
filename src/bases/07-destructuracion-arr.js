@@ -2,12 +2,22 @@
 
 console.log('DESTRUCTURACION DE ARREGLOS');
 
-const myUseState = ( valor ) => {
-    return [valor, () => {console.log('Hola mundo');}]
+export const getUser = ( name, age ) => {
+    return {
+        name: name,
+        age: age,
+        latlng: {
+            lat: 123,
+            lng: 123
+        }
+    }
+    // return [valor, () => {console.log('Hola mundo');}]
 }
 
 
-const [setNombre] = myUseState('Goku')
-console.log(setNombre);
+export const getArr = () => ['ABC',123];
+
+// const [setNombre] = myUseState('Goku')
+// console.log(setNombre);
 
 

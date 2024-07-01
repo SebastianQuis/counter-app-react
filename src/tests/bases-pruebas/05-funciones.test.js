@@ -1,9 +1,9 @@
-import { getUser, userActive } from "../../bases/05-funciones";
+import { getUser, getUser2 } from "../../bases/05-funciones";
 
 
 describe('Pruebas en 05-funciones.js', () => { 
 
-    test('funcion saludar debería arrojar:  getUser', () => { 
+    test('funcion getUser debería arrojar:  getUser', () => { 
        // inicializacion
         const uid = 'abc123';
         const nombre = 'getUser';
@@ -11,17 +11,17 @@ describe('Pruebas en 05-funciones.js', () => {
         const msj = {
             uid: uid,
             username: nombre,
-        }
-        ;
+        };
 
+        // ESTÍMULO
         const msjEsperado = getUser();
-        console.log(`msj: ${msjEsperado}`);
-       // estímulo
+        console.log(`msj: ${JSON.stringify(msjEsperado)}`);
        
        // observacion comportamiento
        // los objetos, apuntan a una memoria y se basan de ahi,
        // para ello se debe usar toEqual
-       expect( msj ).toEqual( msjEsperado );
+       // TODO - TODO EQUAL PORQUE SE TRATA DE COMPARAR OBJETOS
+       expect( msj ).toEqual( msjEsperado ); 
    })
 
 
@@ -31,7 +31,7 @@ describe('Pruebas en 05-funciones.js', () => {
             username: 'Sebas'
         }
 
-        const getUserActive = userActive('Sebas');
+        const getUserActive = getUser2('Sebas');
 
         expect(msj2).toEqual(getUserActive);
      })

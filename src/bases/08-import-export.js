@@ -2,7 +2,7 @@
 // import {heroes} from './data/heroes';
 // import heroes from './data/heroes' // export a un objeto sin nombre
 
-import { heroes } from "../data/heroes";
+import heroes from "../data/heroes.js";
 
 
 // console.log('IMPORT - EXPORT');
@@ -26,7 +26,7 @@ export const getHeroeById = (id) => {
 
 
 // TODO - obtener conjunto de heroes por nombre de OWNER
-const getHeroesByOwner = (owner) => heroes.filter( (heroe) => heroe.owner === owner);
+export const getHeroesByOwner = (owner) => heroes.filter( (heroe) => heroe.owner === owner);
 // console.log(getHeroesByOwner("DC"));
 
 
