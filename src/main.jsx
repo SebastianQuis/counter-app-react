@@ -12,7 +12,8 @@ import { CounterApp } from './CounterApp';
 // COMPONENTE PADRE
 ReactDOM.createRoot( document.getElementById('root') ).render( // root definido en html
     <React.StrictMode>
-        <HtmlApp nombre={'Name'} apodo={'apodo'} edad={1}/>
+        <CounterApp value={4} />
+        {/* <HtmlApp nombre={'Name'} apodo={'apodo'} edad={1}/> */}
     </React.StrictMode>
 );
 

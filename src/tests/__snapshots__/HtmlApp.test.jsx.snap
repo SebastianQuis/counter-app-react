@@ -5,11 +5,18 @@ exports[`Pruebas en <HTMLAPP/> debe de hacer match con el snapshot 1`] = `
   <h1>
     Impresion de variables en HTML
   </h1>
-  <h2>
+  <div
+    data-testid="test-title"
+  >
      
     Name
      
-  </h2>
+  </div>
+  <p>
+     
+    Apodo
+     
+  </p>
   <p>
      
     Apodo

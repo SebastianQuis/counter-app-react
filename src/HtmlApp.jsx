@@ -22,9 +22,11 @@ export const HtmlApp = ({nombre, apodo, edad}) => {
     // console.log(props); // viene del componente padre
     return (
         <>
-            <h1>Impresion de variables en HTML</h1>
-            <h2> {nombre} </h2>
-            <p> {apodo} </p>
+            {/* <h1>Impresion de variables en HTML</h1> */}
+            <h1 data-testid="test-title">{nombre}</h1>
+            <p>{apodo}</p>
+            <p>{apodo}</p>
+            {/* <p> {apodo} </p> */}
             <p> {edad + 5} </p>
             {/* <code>{ JSON.stringify( user ) }</code>
             <p>

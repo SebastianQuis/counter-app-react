@@ -20,15 +20,15 @@ export const CounterApp = ( {value} ) => {
     }
 
     const resetear = () =>  setCounter( value );
-     
+    
 
     return (
         <>
             <h1>CounterApp</h1>
-            <p>{counter}</p>
+            <p> {counter} </p>
             <button onClick={ sumar }> +1 </button>
             <button onClick={ restar }> -1 </button>
-            <button aria-label='btn-reset' onClick={ resetear }> Reset </button>
+            <button onClick={ resetear }> Reset </button>
         </>
     )
 }
